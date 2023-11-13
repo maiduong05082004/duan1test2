@@ -137,7 +137,6 @@ img {
 }
 
 .slides1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+   display: inline-block;
 }
 

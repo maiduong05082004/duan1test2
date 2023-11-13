@@ -125,27 +125,7 @@
                     <button class="next" onclick="changeSlide(1)">Next</button>
                 </div>
             </div>
-            <script>
-                let currentSlide1 = 0;
-                
-                function changeSlide(slide) {
-                    let slides = document.querySelectorAll('.item');
-                    let start = currentSlide1 + slide;
-                    let end = start +5;
-                
-                    for (let i = 0; i < slides.length; i++) {
-                        slides[i].style.display = 'none';
-                    }
-                
-                    for (let i = start; i < end; i++) {
-                        if (i >= 0 && i < slides.length) {
-                            slides[i].style.display = 'block';
-                        }
-                    }
-                
-                    currentSlide1 = start;
-                }
-                </script>
+    
 
         </div>
     </main>
