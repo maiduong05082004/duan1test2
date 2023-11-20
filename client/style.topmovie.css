@@ -1,0 +1,659 @@
+/* Phần menu đầu trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo img {
+    width: 77px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.menu-nav {
+    margin-left: auto;
+}
+
+.menu-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-nav li {
+    margin: 0 10px;
+}
+
+.menu-nav a,
+.intro a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.menu-nav a:hover {
+    color: #d82f8b;
+}
+
+/* Phần dropdown menu */
+nav .dropdown:hover .submenu {
+    display: block;
+}
+
+nav .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    margin-top: 4px;
+}
+
+nav .submenu li {
+    margin: 0;
+    padding: 0;
+}
+
+nav .submenu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo-icon {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hide the dropdown menu by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 12px 23px 0px rgb(0 0 0 / 41%);
+    z-index: 1;
+    margin: 2px -46px;
+}
+
+/* Show the dropdown menu on hover */
+.logo-icon:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Phần biểu tượng và hình ảnh */
+.svg-hearder {
+    color: #d82f8b;
+    padding-left: 10px;
+    border-left: 1px solid #000;
+    margin: 0 10px 0 18px;
+}
+
+.intro>a {
+    margin-left: -9px;
+    color: #cb2580;
+}
+
+.logo-icon a img {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    object-fit: contain;
+}
+
+/* Phần nội dung quản trị */
+.admin-content {
+    padding: 20px;
+}
+
+.admin-content h1 {
+    border-bottom: 1px solid #bdc3c7;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Phần tìm kiếm */
+
+.search-input {
+    padding: 8px 12px;
+    margin-right: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Phần bảng dữ liệu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #bdc3c7;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #5dbad6;
+    color: #ffffff;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+td img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Phần nút điều hướng và thao tác */
+.submit-btn,
+.add-btn,
+.delete-btn,
+.edit-btn {
+    padding: 10px 15px;
+    background-color: #017C75;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn {
+    margin: 21px;
+}
+
+/* header */
+
+
+
+.background {
+    position: absolute;
+    top: 85px;
+    height: 8rem;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://homepage.momocdn.net/img/momo-upload-api-230620135254-638228659743381732.png);
+}
+
+.photo_shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 8rem;
+    background-image: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.5), #b9c3d13b);
+}
+
+.container {
+    background-color: black;
+    margin-top: 114px;
+}
+
+.text {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 29px;
+    padding: 27px;
+}
+
+.text>h2>b {
+    color: #cb2580;
+}
+
+.text>h2 {
+    font-size: 2.25rem;
+}
+
+.text>p {
+    color: #c8c8c8;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 15px;
+}
+
+/* content */
+.content {
+    position: relative;
+    margin-top: 0.5rem;
+    left: 127px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.row>.col-box {
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+}
+
+.movie-showcase {
+    grid-row-start: 1;
+    position: relative;
+}
+
+.group {
+    position: relative;
+    transition: all 200ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.group-img {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    /* Adjust as needed, 'rounded-lg' typically corresponds to a moderate border radius */
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    width: 60%;
+}
+
+.group:hover .group-img {
+    outline: 3px solid #ffffff47;
+    border: 1px solid #efefef;
+}
+
+.group-imgs {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.poster-1 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 0%;
+    z-index: 5;
+}
+
+.movie-poster {
+    position: absolute;
+    inset: 0;
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    /* 'rounded-lg' typically corresponds to a moderate border radius */
+    object-fit: cover;
+    /* For 'object-cover' */
+
+}
+
+.poster-1>.img {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+    background-color: transparent;
+
+}
+
+.poster-2 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 12.5%;
+    z-index: 4;
+}
+
+.poster-3 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 25%;
+    z-index: 3;
+}
+
+.poster-4 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 37.5%;
+    z-index: 2;
+}
+.movie-card>a{
+    text-decoration: none;
+}
+.poster-5 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 50%;
+    z-index: 1;
+}
+
+.movie-poster {
+    transition: transform 0.5s ease;
+    /* Thêm hiệu ứng chuyển đổi mượt mà */
+}
+
+.movie-poster:hover {
+    transform: scale(1.1);
+    /* Phóng to ảnh lên 10% khi hover */
+}
+
+.group>h3 {
+    margin-top: 0.75rem;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1.25;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.group>h3:hover {
+    text-decoration: underline;
+}
+
+.group>p {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #D1D5DB;
+}
+.movie-info {
+    margin-top: 0.75rem;
+    display: flex;
+    align-items: center; 
+    gap: 0.375rem; 
+    font-size: 0.75rem; 
+    color: #9CA3AF;
+}
+.views {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem; 
+}
+.views>svg{
+    position: relative;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.box-1{
+    left: 200px;
+}
+.box-3{
+    right: 200px;
+}
+/* article */
+.article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1152px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 32px;
+}
+.info-topmovie{
+    grid-column: 1;
+}
+.content-article{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-bottom: 1px solid #E5E7EB;
+}
+.info-topmovie > *:not(:first-child) {
+    border-top: 1px solid #E5E7EB; 
+}
+.news {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px; 
+    padding-bottom: 24px; 
+}
+
+.news > :first-child {
+    padding-top: 0;
+}
+.news>a{
+    text-decoration: none;
+    width: 300px;
+}
+.news>a:hover{
+    text-decoration: underline;
+}
+.group-img-article{
+    position: relative;
+    width: 100%;
+    flex-shrink: 0;
+    align-self: flex-start;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+
+.group-imgs-article{
+    position: relative; 
+    cursor: pointer; 
+    border-radius: 0.75rem; 
+    width: 100%; 
+    height: auto;
+    aspect-ratio: 16 / 9; 
+}
+.poster-article-1{
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 37.47%;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, .2), 0 10px 10px -5px rgba(0, 0, 0, .04);
+    padding-top: calc(100% * (1 / 2));
+}
+.movie-poster-article{
+    position: absolute;
+    inset: 0; 
+    width: 100%; 
+    border-radius: 0.75rem; 
+}
+.poster-article-1>.img-article {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: 0.5rem;
+    background-color: transparent;
+
+}
+.poster-article-1{
+    z-index: 5;
+}
+.poster-article-2 {
+    position: absolute;
+    top: 0; 
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 12.5%;
+    z-index: 4;
+}
+
+.poster-article-3 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 25%;
+    z-index: 3;
+}
+
+.poster-article-4 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 37.5%;
+    z-index: 2;
+}
+.poster-article-5 {
+    position: absolute;
+    top: 0;
+    aspect-ratio: 2 / 3;
+    height: 100%;
+    left: 50%;
+    z-index: 1;
+}
+.card-body {
+    margin-top: 0.75rem; 
+    flex-grow: 1;
+}
+.card-body.a>h3 {
+    transition: all 200ms; 
+    cursor: pointer;
+    font-size: 1.125rem; 
+    font-weight: bold;
+    line-height: 1.25; 
+    color: #000000;
+}
+.card-body>a{
+    text-decoration: none;
+}
+.card-body>a:hover {
+    text-decoration: underline; 
+}
+.card-body>p {
+    margin-top: 0.5rem; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.875rem; 
+    font-weight: 300;
+    color: #718096; 
+}
+.menu-right {
+    margin-bottom: 1rem;
+    width: 312px;
+}
+.heading-title {
+    padding-bottom: 0.5rem; 
+    text-align: left;
+    font-size: 1.125rem; 
+    font-weight: bold; 
+    color: #2D3748;
+}
+.content-menu-right{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    border-collapse: collapse;
+}
+.content-menu-right > * + * { 
+    border-top: 1px solid #e5e7eb; 
+  }
+  .cinema-menu-right {
+    position: relative;
+  }
+  .cinema-menu-right > * + * {
+    border-top: 1px solid #e5e7eb; 
+  }
+.cinema-item{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.content-cinema-item{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image-content{
+    flex: none; 
+}
+.content-cinema-item>.image-content>a>img {
+    width: 70px;
+    height: 100px;
+}
+.content-right{
+    padding-left: 1rem;
+}
+.content-right>a{
+    text-decoration: none;
+    color: #000;
+}
+.content-right>.genger{
+    color: #718096;
+    margin-top: 8px;
+}
+.views-menu-right{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+.views-menu-right>svg{
+    position: relative;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    color: #718096;
+}
+.views-menu-right>span{
+    margin: 8px;
+    color: #718096;
+    font-size: 0.875rem;
+}

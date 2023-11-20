@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Slider Demo</title>
+<style>
+  #image-slider img {
+    display: none; /* Ẩn tất cả các ảnh */
+    width: 100%; /* Đặt chiều rộng cho ảnh */
+    height: auto; /* Đặt chiều cao tự động */
+    position: absolute; /* Đặt vị trí tuyệt đối cho tất cả ảnh */
+    top: 0;
+    transition: transform 1s ease; /* Thêm transition với thời gian 1 giây */
+}
+
+#image-slider img.active {
+    display: block; /* Chỉ hiển thị ảnh đang active */
+}
+ 
+
+</style>
+</head>
+<body>
+
+
+
+  <div id="image-slider">
+  <img src="img_content1.jpg" /> 
+  <img src="img_content1.jpg" />
+  <img src="img_content2.jpg" />
+  <img src="img_content3.jpg" />
+  <img src="img_content4.jpg" />
+  <img src="img_content5.jpg" />
+</div>
+
+
+<button id="prev-btn">Trượt Sang Trái</button>
+<button id="next-btn">Trượt Sang Phải</button>
+
+<script>
+$(document).ready(function(){
+    $('#next-btn').click(function() {
+        var currentImg = $('#image-slider img.active');
+        var nextImg = currentImg.next();
+
+        if (nextImg.length) {
+            currentImg.css('transform', 'translateX(-100%)');
+            nextImg.css('transform', 'translateX(0)').addClass('active');
+            currentImg.removeClass('active');
+        } else {
+            // Nếu đây là ảnh cuối cùng, quay trở lại ảnh đầu tiên
+            var firstImg = $('#image-slider img').first();
+            currentImg.css('transform', 'translateX(-100%)').removeClass('active');
+            firstImg.css('transform', 'translateX(0)').addClass('active');
+        }
+    });
+
+    $('#prev-btn').click(function() {
+        var currentImg = $('#image-slider img.active'); 
+        var prevImg = currentImg.prev();
+
+        if (prevImg.length) {
+            currentImg.css('transform', 'translateX(100%)');
+            prevImg.css('transform', 'translateX(0)').addClass('active');
+            currentImg.removeClass('active');
+        } else {
+            // Nếu đây là ảnh đầu tiên, quay trở lại ảnh cuối cùng
+            var lastImg = $('#image-slider img').last();
+            currentImg.css('transform', 'translateX(100%)').removeClass('active');
+            lastImg.css('transform', 'translateX(0)').addClass('active');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="left-menu">
+            <div class="menu-logo">
+                <img src="../upload/logo.png" alt="Logo" />
+            </div>
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <script xmlns="" />
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#FEE6CD" d="M17 15h4v12h-4z" />
+                    <path
+                        d="M17 4a6 6 0 0 1 4.224 10.261 2.999 2.999 0 0 1 1.759 2.418l4.468-1.276A2 2 0 0 1 30 17.326v7.348a2 2 0 0 1-2.55 1.923l-4.467-1.276A3 3 0 0 1 20 28H5a3 3 0 0 1-3-3v-1a1 1 0 0 1 2 0v1a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H5a1 1 0 0 0-.993.883L4 17a1 1 0 0 1-2 0c0-1.067.557-2.004 1.397-2.536a5 5 0 1 1 7.838-6.124A5.999 5.999 0 0 1 17 4zm1.5 18a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm9.5-4.674-5 1.428v4.492l5 1.428v-7.348zM3 19a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1zm10-1a1 1 0 0 1 0 2H7a1 1 0 0 1 0-2h6zm-1.324-5.23-.03.081c-.165.414-.383.8-.647 1.15h1.53a6.014 6.014 0 0 1-.853-1.231zM17 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM7 8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
+                        fill="#FA8C16" fill-rule="nonzero" />
+                </g>
+            </svg>
+            <div class="intro"><a href="#">GoView<br>Let's go</a></div>
+        </div>
+        <nav class="menu-nav">
+            <ul>
+                <li><a href="#">Lịch chiếu</a></li>
+                <li><a href="#">Phim chiếu</a></li>
+                <li class="dropdown">
+                    <a href="./Account/account.html">Tài khoản</a>
+                    <ul class="submenu">
+                        <li><a href="./Account/comment_account.html">Comment</a></li>
+                        <li><a href="#">Thống Kê</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Quản lý phim</a></li>
+                <li><a href="#">Thống kê</a></li>
+                <li class="logo-icon">
+                    <a href="#"><img src="../upload/images.png" alt="User Logo" /></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <body>
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+                <!-- Sidebar - Brand -->
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink"></i>
+                    </div>
+                    <div class="sidebar-brand-text mx-3">Admin</div>
+                </a>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0">
+
+                <!-- Nav Item - Dashboard -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Dashboard</span></a>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Interface
+                </div>
+
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseTwo">
+                        <i class="fas fa-fw fa-cog"></i>
+                        <span>Components</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Custom Components:</h6>
+                            <a class="collapse-item" href="buttons.html">Buttons</a>
+                            <a class="collapse-item" href="cards.html">Cards</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-target="#collapseUtilities"
+                        aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fas fa-fw fa-wrench"></i>
+                        <span>Utilities</span>
+                    </a>
+                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Custom Utilities:</h6>
+                            <a class="collapse-item" href="utilities-color.html">Colors</a>
+                            <a class="collapse-item" href="utilities-border.html">Borders</a>
+                            <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                            <a class="collapse-item" href="utilities-other.html">Other</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+
+                <!-- Heading -->
+                <div class="sidebar-heading">
+                    Addons
+                </div>
+
+                <!-- Nav Item - Pages Collapse Menu -->
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-target="#collapsePages"
+                        aria-expanded="true" aria-controls="collapsePages">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Pages</span>
+                    </a>
+                    <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Login Screens:</h6>
+                            <a class="collapse-item" href="login.html">Login</a>
+                            <a class="collapse-item" href="register.html">Register</a>
+                            <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                            <div class="collapse-divider"></div>
+                            <h6 class="collapse-header">Other Pages:</h6>
+                            <a class="collapse-item" href="404.html">404 Page</a>
+                            <a class="collapse-item" href="blank.html">Blank Page</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Nav Item - Charts -->
+                <li class="nav-item">
+                    <a class="nav-link" href="charts.html">
+                        <i class="fas fa-fw fa-chart-area"></i>
+                        <span>Charts</span></a>
+                </li>
+
+                <!-- Nav Item - Tables -->
+                <li class="nav-item">
+                    <a class="nav-link" href="tables.html">
+                        <i class="fas fa-fw fa-table"></i>
+                        <span>Tables</span></a>
+                </li>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider d-none d-md-block">
+
+                <!-- Sidebar Toggler (Sidebar) -->
+
+
+                <!-- Sidebar Message -->
+
+
+            </ul>
+            <!-- End of Sidebar -->
+
+</html>
